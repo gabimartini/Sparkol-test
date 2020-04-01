@@ -10,6 +10,7 @@ https://github.com/dantame/interview-authentication-service
 For this authentication there are two Usernames and passwords, they are:
 
 { 
+
 jeff1967: 'hotdog',
 
 suefrank1234: 'lightbulb',
