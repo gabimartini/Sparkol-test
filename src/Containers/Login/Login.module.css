@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+
+.Login {
+    margin: 3vh auto;
+    width: 80%;
+    text-align: center;
+    box-shadow: 0 2px 3px #ccc;
+    border: 1px solid #eee;
+    padding: 1vw;
+    box-sizing: border-box;
+    display: inline-block;
+ 
+    
+}
+
+::placeholder{
+    text-align: center;
+    font-size: 1.3vw;
+   font-family: Arial, Helvetica, sans-serif;
+   }
+
+input{
+    border: transparent;
+    width: 50%;
+}
+
+
+
+form {
+    
+    width: 50vw;
+    height: 60vh;
+    margin: 6.2vh 20vw 10vh 20vw;
+    border: 2px solid #2e4768c5;
+    border-radius: 25px;
+    text-align: center;
+    padding: 8vw 2vw 0vw 2vw;
+    box-shadow: 23px 23px 0px 0px  #2e4768c5;
+
+    
+}
+
+button {
+    margin: 5vh, auto;
+    width: 30vw;
+    text-align: center;
+    box-shadow: 0 5px 6px #2e4768;
+    border: 1px solid  transparent;
+    background-color: #314053c5;
+    color:white;
+    padding: 1vw;
+    box-sizing: border-box;
+    font-size: 1.5vw;
+    font-family: 'Roboto Mono', monospace;
+    cursor: pointer;
+}
+
+.error {
+    font-family: 'Inconsolata', monospace
+}

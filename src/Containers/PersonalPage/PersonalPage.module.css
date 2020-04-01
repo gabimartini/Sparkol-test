@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+
+.container{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    width: 96vw;
+    padding: 2vw;
+    
+}
+
+.gretting{
+font-size: 1.1vw;
+font-family: 'Inconsolata', monospace;
+font-weight: 600;
+
+}
+
+.personalpage{
+text-align: center;
+margin-top: 8vw;
+font-family: 'Roboto Mono', monospace;
+color: rgb(151, 151, 151)
+}
+
+.logout{
+    
+    text-decoration: none;
+    color: black;
+    font-size: 1.1vw;
+    margin-left: 25vw;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 600;
+    
+
+}
+
+span{
+    color: #2762af;
+    font-family: 'Inconsolata', monospace;
+    
+}
