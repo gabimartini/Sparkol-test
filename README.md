@@ -1,7 +1,6 @@
 Setup
 
 npm install
-
 npm start
 
 You should run the app with this authentication service:
