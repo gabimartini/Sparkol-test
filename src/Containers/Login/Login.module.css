@@ -25,7 +25,6 @@ input{
 }
 
 
-
 form {
     
     width: 50vw;
@@ -55,6 +54,18 @@ button {
     cursor: pointer;
 }
 
+.errorBox {
+    width: 30%;
+    height: 7vh;
+    border-radius: 15px;
+    margin-left: 34vw;
+    background-color: rgb(247, 153, 142);
+    border: 2px solid rgb(247, 153, 142);
+    padding: 5px;
+}
+
 .error {
-    font-family: 'Inconsolata', monospace
+    font-family: 'Inconsolata', monospace;
+    color: rgb(148, 11, 11);
+   
 }

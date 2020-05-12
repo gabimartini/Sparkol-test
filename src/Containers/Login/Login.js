@@ -17,16 +17,24 @@ const [message, setmessage] = useState('')
 
 const submitHandler = event => {
 event.preventDefault();
-        
+    
     if(name !== '' && password !== ''){
     axios.post('http://localhost:3333/login', { username: name, password: password })
-    .then(res=> { setRoute(true)})
-    .catch((error)=>{ setmessage(error.message);
+    .then(res=> {  sessionStorage.setItem('Name', res.data.user.name);
+    sessionStorage.setItem('Age', res.data.user.age);
+    setRoute(true);
+  })
+
+    .catch((error)=>{ setmessage(error.message);  
+      if(error.response.status === 401){
+        setmessage("Invalid Username or Password")
+      };
       });
      }else{
       setmessage('Fill in all fields')
      }
     sessionStorage.setItem('User', name);
+   
   };
 
 
@@ -43,7 +51,15 @@ if(route){
     return <Redirect to='/page'/>
 }
 
+let errorMessage = ''
 
+if(message){
+
+  errorMessage = <div className={classes.errorBox}><p className={classes.error}>{message}</p></div>
+}
+else{
+  errorMessage = ''
+}
 
   return(
 
@@ -77,7 +93,9 @@ if(route){
     type='Submit'> Send
     </button>
 </form>
-    <p className={classes.error}>{message}</p>
+    
+    {errorMessage}
+    
  </Card>
 
   )
